@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 /**
  * In Angular, a router is a module that allows you to manage navigation
  * within your application. It helps you build single-page applications
@@ -20,7 +21,7 @@ import { RouterModule, Routes } from '@angular/router';
  * I'm using it for a home page, but you should display a 404 not found page.
  * 
  * i.e. routes = [
- *  { path: 'products', component: ProductsPageComponent}
+ *  { path: 'products', component: ProductsPageComponent},
  *  { path: '**', component: HomePageComponent}
  * ];
  * 
@@ -37,7 +38,9 @@ import { RouterModule, Routes } from '@angular/router';
  */
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '**', component: HomePageComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
