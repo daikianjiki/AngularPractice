@@ -1,0 +1,23 @@
+<h2>Counter</h2>
+<!-- In Angular, event binding is a feature that allows you to respond to events
+    triggered by user interactions, such as button clicks, mouse movements, or
+    keyboard inputs. Event binding in Angular uses parentheses '()' to bind a
+    component's method to an event emitted by a DOM element.
+
+    Below, we bind the 'click' event of the <button> element to a method called
+    increment() and decrement() defined in the component class. When the button
+    is clicked, Angular calls the increment() or decrement() method.
+
+    Event binding can also pass event data to the component method. For example,
+    you can pass the event object or specific event properties to the method.
+
+    <input (keyup)="handleKey($event)">
+
+    In this case, we bind the 'keyup' event of the <input> element to a method
+    called handleKeyUp($event). The $event parameter represents the event object,
+    and you can access its properties, such as 'target.value' to get the input
+    value.
+-->
+<button (click)="increment()">Increment</button>
+<p>{{ count }}</p>
+<button (click)="decrement()">Decrement</button>

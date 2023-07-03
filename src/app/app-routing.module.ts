@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { TaskPageComponent } from './pages/task-page/task-page.component';
 /**
  * In Angular, a router is a module that allows you to manage navigation
  * within your application. It helps you build single-page applications
@@ -41,6 +42,7 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 
 const routes: Routes = [
   { path: 'product', component: ProductPageComponent},
+  { path: 'tasks', component: TaskPageComponent},
   { path: '**', component: HomePageComponent }
 ];
 
