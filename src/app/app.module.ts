@@ -11,6 +11,7 @@ import { InterpolationComponent } from './components/interpolation/interpolation
 import { CounterComponent } from './components/counter/counter.component';
 import { UserdetailsComponent } from './components/userdetails/userdetails.component';
 import { TaskPageComponent } from './pages/task-page/task-page.component';
+import { ImageuploadComponent } from './components/imageupload/imageupload.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TaskPageComponent } from './pages/task-page/task-page.component';
     InterpolationComponent,
     CounterComponent,
     UserdetailsComponent,
-    TaskPageComponent
+    TaskPageComponent,
+    ImageuploadComponent
   ],
   imports: [
     BrowserModule,
