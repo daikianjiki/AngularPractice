@@ -1,0 +1,26 @@
+<h2>Todo List</h2>
+<!--
+    In the input element, '#todo' creates a local template variable named "todo" 
+    that represents the input element. 
+
+    '(keyup.enter)' event binding listens for user pressing the Enter key.
+-->
+<input #todo placeholder="add work item" (keyup.enter)="addTodo(todo.value); todo.value = ''">
+<button (click)="addTodo(todo.value)">Add</button>
+
+<h3>Todos:</h3>
+<!--
+    '*ngFor' is an Angular structural directive and it iterates over an array
+    called "todos" and generate HTML elements based on the provided template for 
+    each item in the array. In this case, a local template variable named "todo"
+    represents each individual item in the "todos" array. "i" represents the 
+    index of each item in the "todos" array.
+-->
+<div *ngFor="let todo of todos; let i = index">
+    <ul>
+        <li>
+            {{ todo }}
+            <button (click)="removeTodo(i)">Remove</button>
+        </li>
+    </ul>
+</div>

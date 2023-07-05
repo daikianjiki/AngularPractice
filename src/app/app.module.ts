@@ -12,6 +12,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { UserdetailsComponent } from './components/userdetails/userdetails.component';
 import { TaskPageComponent } from './pages/task-page/task-page.component';
 import { ImageuploadComponent } from './components/imageupload/imageupload.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ImageuploadComponent } from './components/imageupload/imageupload.compo
     CounterComponent,
     UserdetailsComponent,
     TaskPageComponent,
-    ImageuploadComponent
+    ImageuploadComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
