@@ -1,5 +1,21 @@
 <h2>Image Upload</h2>
-
+<!--
+    In Angular, property binding is used to bind a property of an HTML element
+    to a value or expression in the component's class. It allows you to 
+    dynamically update and control the properties of HTML elements. Property
+    binding uses a square brackets '[]' to bind the property of HTML element.
+-->
 <img [src]="url">
 <br>
+<!--
+    Event binding can also pass event data to the component method. For example,
+    you can pass the event object or specific event properties to the method.
+
+    <input (keyup)="handleKey($event)">
+
+    In this case, we bind the 'keyup' event of the <input> element to a method
+    called handleKeyUp($event). The $event parameter represents the event object,
+    and you can access its properties, such as 'target.value' to get the input
+    value.
+-->
 <input type="file" (input)="onFileSelected($event)">
