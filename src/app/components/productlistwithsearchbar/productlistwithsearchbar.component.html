@@ -1,0 +1,33 @@
+<h2>Product List with Search Bar</h2>
+
+<input #product placeholder="Search for Product" (input)="searchFor(product.value)">
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let product of filteredProducts">
+        <tr>
+            <td>{{ product.name }}</td>
+            <!--
+                In Angular, pipes are feature that allows you to transform the value of an
+                expression before displaying it in the template. They are denoted by the 
+                pipe character '|' followed by the name of the pipe.
+
+                'currency' is the same of the pipe being used. It is a built-in pipe in
+                Angular that formats a number as currency based on the current locale.
+
+                Pipes in Angular are versatile and provide various transformation options.
+                Besides the 'currency' pipe, Angular offers many other built-in pipes for 
+                common transformations like date formatting, uppercase/lowercase
+                converstioins, number formattingm and more. Additionally, you can create
+                your own custom pipes for specific transformations that are not covered
+                by the built-in pipes.
+            -->
+            <td>{{ product.price | currency }}</td>
+        </tr>
+    </tbody>
+</table>

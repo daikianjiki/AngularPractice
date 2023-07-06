@@ -13,6 +13,7 @@ import { UserdetailsComponent } from './components/userdetails/userdetails.compo
 import { TaskPageComponent } from './pages/task-page/task-page.component';
 import { ImageuploadComponent } from './components/imageupload/imageupload.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
+import { ProductlistwithsearchbarComponent } from './components/productlistwithsearchbar/productlistwithsearchbar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TodolistComponent } from './components/todolist/todolist.component';
     UserdetailsComponent,
     TaskPageComponent,
     ImageuploadComponent,
-    TodolistComponent
+    TodolistComponent,
+    ProductlistwithsearchbarComponent
   ],
   imports: [
     BrowserModule,
